@@ -4,11 +4,12 @@
     Welcome to {{ title }}!
   </h1>
 </div>
-<table>
+<table border="1">
+  <tr><td>EmpId</td><td>Name</td></tr>
   <tbody>
-    <tr **ngFor="let emp of employees">
-      <td>{{emp.empid}}</td>
-      <td>{{emp.empname}}</td>
+    <tr *ngFor="let emp of employees">
+      <td>{{emp.empId}}</td>
+      <td>{{emp.name}}</td>
     </tr>
   </tbody>
 </table>

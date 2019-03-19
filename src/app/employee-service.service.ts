@@ -1,14 +1,12 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/Common/http';
+import {HttpClient} from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 
-export class Employee{
-	 constructor(public empid:String,
-	 	public empname:String,){}
-}
+
 
 
 export class EmployeeServiceService {
@@ -16,6 +14,13 @@ export class EmployeeServiceService {
   constructor(private httpClient:HttpClient) { }
 
   getEmployees(){
-    return this.httpClient.get<Employee[]>('http://localhost:8000/')
+  	console.log("came");
+    return this.httpClient.get<Employee[]>('http://localhost:8080/')
   }
 }
+
+export class Employee{
+	 constructor(public empId:String,
+	 	public name:String,){}
+}
+
