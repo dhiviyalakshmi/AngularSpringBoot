@@ -1,3 +1,10 @@
-<p>
-  addemployee works!
-</p>
+<h2>Add Employee</h2>
+
+<label>Employee Id :</label>
+<input type="text" id="empid" placeholder="Emp id" [(ngModel)]="user.empId">
+<br><br>
+<label>Employee Name:</label>
+<input type="text" id="empname" placeholder="Emp name" [(ngModel)]="user.name">
+
+<br><br>
+<button (click)="createEmployee()">Create Employee</button>
