@@ -26,6 +26,10 @@ export class EmployeeServiceService {
   public deleteEmployee(employee){
    return this.httpClient.delete<Employee>("http://localhost:8080/deleteemployee/"+employee.empId);
   }
+
+  public editEmployee(empid,employee){
+   return this.httpClient.post<Employee>("http://localhost:8080/editemployee/"+empid,employee);
+  }
 }
 
 
