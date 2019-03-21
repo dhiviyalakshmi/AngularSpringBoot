@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { DisplayemployeeComponent } from './displayemployee/displayemployee.component';
 import { UpdateemployeeComponent } from './updateemployee/updateemployee.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UpdateemployeeComponent } from './updateemployee/updateemployee.compone
     AppComponent,
     AddemployeeComponent,
     DisplayemployeeComponent,
-    UpdateemployeeComponent
+    UpdateemployeeComponent,
+    HeaderComponent
 
   ],
   imports: [

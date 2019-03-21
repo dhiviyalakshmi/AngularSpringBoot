@@ -1,9 +1,16 @@
-<h2>Update Employee</h2>
+<div class="col-md-6">
+	<h2>Update Employee</h2>
+<form>
+	<div class="form-group">
 <label>Employee Id :</label>
-<input type="text" id="empid"  placeholder="Emp id" [(ngModel)]="updateuser.empId">
-<br><br>
+<input type="text" id="empid"  placeholder="Emp id" class="form-control" [(ngModel)]="updateuser.empId">
+</div>
+<div class="form-group">
 <label>Employee Name:</label>
-<input type="text" id="empname"  placeholder="Emp name" [(ngModel)]="updateuser.name">
+<input type="text" id="empname"  placeholder="Emp name" class="form-control" [(ngModel)]="updateuser.name">
+</div>
 
-<br><br>
-<button (click)="updateEmployee()">Update Employee</button>
+<button class="btn btn-success" (click)="updateEmployee()">Update Employee</button>&nbsp;
+<button class="btn btn" [routerLink]="['']">Return to Home Page</button>
+</form>
+</div>
